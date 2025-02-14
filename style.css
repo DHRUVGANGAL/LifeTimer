@@ -15,12 +15,15 @@ body{
     background-size: cover;
     /* background-position: center; */
     background-repeat: no-repeat;
+    position: relative; /* Add this */
+    overflow: hidden;   /* Add this */
 
 }
 .container{
     display: grid;
     place-items: center;
     height: 100vh;
+     
 }
 .container h1{
     font-size: 4rem;
@@ -59,8 +62,12 @@ body{
     color: white;
 }
 .hide{
+
     display: none;
-}
+    visibility: hidden; /* Add this */
+    opacity: 0;        /* Add this */
+  }
+
 .timecontainer{
     display: flex;
     gap: 2rem;
